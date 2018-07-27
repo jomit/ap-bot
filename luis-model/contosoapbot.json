@@ -1,6 +1,6 @@
 {
   "luis_schema_version": "3.0.0",
-  "versionId": "0.1",
+  "versionId": "1.0",
   "name": "contosoapbot",
   "desc": "",
   "culture": "en-us",
