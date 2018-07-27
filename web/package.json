@@ -1,0 +1,25 @@
+{
+  "name": "ap-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "azure-sb": "^0.10.6",
+    "bluebird": "^3.5.1",
+    "botbuilder": "^3.15.0",
+    "botbuilder-azure": "^3.1.0",
+    "dotenv": "^6.0.0",
+    "mssql": "^4.1.0",
+    "nodemailer": "^4.6.5",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "restify": "^7.2.0",
+    "btoa": "^1.2.1"
+  }
+}

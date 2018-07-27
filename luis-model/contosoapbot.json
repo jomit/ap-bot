@@ -1,0 +1,435 @@
+{
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.1",
+  "name": "contosoapbot",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "Age"
+    },
+    {
+      "name": "Greeting"
+    },
+    {
+      "name": "Help"
+    },
+    {
+      "name": "InterestingFact"
+    },
+    {
+      "name": "InvoiceCopy"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "PaymentStatus"
+    },
+    {
+      "name": "POStatus"
+    }
+  ],
+  "entities": [
+    {
+      "name": "InvoiceNumber",
+      "roles": []
+    },
+    {
+      "name": "PONumber",
+      "roles": []
+    },
+    {
+      "name": "VendorName",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "can you tell me something interesting about contoso?",
+      "intent": "InterestingFact",
+      "entities": []
+    },
+    {
+      "text": "could i have a copy of invoice 456789 from vendor e",
+      "intent": "InvoiceCopy",
+      "entities": [
+        {
+          "entity": "InvoiceNumber",
+          "startPos": 31,
+          "endPos": 36
+        },
+        {
+          "entity": "VendorName",
+          "startPos": 50,
+          "endPos": 50
+        }
+      ]
+    },
+    {
+      "text": "could i have a copy of invoice sid545864 from vendor abc corp pvt ltd",
+      "intent": "InvoiceCopy",
+      "entities": [
+        {
+          "entity": "InvoiceNumber",
+          "startPos": 31,
+          "endPos": 39
+        },
+        {
+          "entity": "VendorName",
+          "startPos": 53,
+          "endPos": 68
+        }
+      ]
+    },
+    {
+      "text": "could i have a copy of invoice sid545864 from vendor acme",
+      "intent": "InvoiceCopy",
+      "entities": [
+        {
+          "entity": "InvoiceNumber",
+          "startPos": 31,
+          "endPos": 39
+        },
+        {
+          "entity": "VendorName",
+          "startPos": 53,
+          "endPos": 56
+        }
+      ]
+    },
+    {
+      "text": "could i have a copy of invoice sid545864 from vendor acme corp ltd",
+      "intent": "InvoiceCopy",
+      "entities": [
+        {
+          "entity": "InvoiceNumber",
+          "startPos": 31,
+          "endPos": 39
+        },
+        {
+          "entity": "VendorName",
+          "startPos": 53,
+          "endPos": 65
+        }
+      ]
+    },
+    {
+      "text": "could i have a copy of invoice sid545864 from vendor northwinds inc.",
+      "intent": "InvoiceCopy",
+      "entities": [
+        {
+          "entity": "InvoiceNumber",
+          "startPos": 31,
+          "endPos": 39
+        },
+        {
+          "entity": "VendorName",
+          "startPos": 53,
+          "endPos": 67
+        }
+      ]
+    },
+    {
+      "text": "good afternoon",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "good evening",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "good morning",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "good night",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello bot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "help me",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "help me please",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi bot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hiya",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are you",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are you doing today?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are you doing?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are you today?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how can you help me?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "how old are you?",
+      "intent": "Age",
+      "entities": []
+    },
+    {
+      "text": "i am stuck",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "i'm stuck",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "my water bottle is green.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "payment status for 11002",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "please help me",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "testing",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "that is great",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "there is a large deep dish pizza in your future.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what can i say",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what can you do",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what can you help me with",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what do i do now?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what do i do?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what do you know about contoso history?",
+      "intent": "InterestingFact",
+      "entities": []
+    },
+    {
+      "text": "what do you know about contoso?",
+      "intent": "InterestingFact",
+      "entities": []
+    },
+    {
+      "text": "what is the payment status for invoice number invoicenumber and vendor vendorname",
+      "intent": "PaymentStatus",
+      "entities": [
+        {
+          "entity": "InvoiceNumber",
+          "startPos": 46,
+          "endPos": 58
+        },
+        {
+          "entity": "VendorName",
+          "startPos": 71,
+          "endPos": 80
+        }
+      ]
+    },
+    {
+      "text": "what is the payment status for invoice number sid545864 and vendor abc corp pvt ltd",
+      "intent": "PaymentStatus",
+      "entities": [
+        {
+          "entity": "InvoiceNumber",
+          "startPos": 46,
+          "endPos": 54
+        },
+        {
+          "entity": "VendorName",
+          "startPos": 67,
+          "endPos": 82
+        }
+      ]
+    },
+    {
+      "text": "what is the payment status for invoice number sid545864 and vendor acme",
+      "intent": "PaymentStatus",
+      "entities": [
+        {
+          "entity": "InvoiceNumber",
+          "startPos": 46,
+          "endPos": 54
+        },
+        {
+          "entity": "VendorName",
+          "startPos": 67,
+          "endPos": 70
+        }
+      ]
+    },
+    {
+      "text": "what is the payment status for invoice number sid545864 and vendor acme corp ltd",
+      "intent": "PaymentStatus",
+      "entities": [
+        {
+          "entity": "InvoiceNumber",
+          "startPos": 46,
+          "endPos": 54
+        },
+        {
+          "entity": "VendorName",
+          "startPos": 67,
+          "endPos": 79
+        }
+      ]
+    },
+    {
+      "text": "what is the payment status for invoice number sid545864 and vendor northwinds inc",
+      "intent": "PaymentStatus",
+      "entities": [
+        {
+          "entity": "InvoiceNumber",
+          "startPos": 46,
+          "endPos": 54
+        },
+        {
+          "entity": "VendorName",
+          "startPos": 67,
+          "endPos": 80
+        }
+      ]
+    },
+    {
+      "text": "what is the status for po number 123456",
+      "intent": "POStatus",
+      "entities": [
+        {
+          "entity": "PONumber",
+          "startPos": 33,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "what is the status for po number ponumber",
+      "intent": "POStatus",
+      "entities": [
+        {
+          "entity": "PONumber",
+          "startPos": 33,
+          "endPos": 40
+        }
+      ]
+    },
+    {
+      "text": "what is your age?",
+      "intent": "Age",
+      "entities": []
+    },
+    {
+      "text": "where is my money on invoice sid545864 and vendor abc company",
+      "intent": "PaymentStatus",
+      "entities": [
+        {
+          "entity": "InvoiceNumber",
+          "startPos": 29,
+          "endPos": 37
+        },
+        {
+          "entity": "VendorName",
+          "startPos": 50,
+          "endPos": 60
+        }
+      ]
+    },
+    {
+      "text": "why doesn't this work ?",
+      "intent": "Help",
+      "entities": []
+    }
+  ]
+}

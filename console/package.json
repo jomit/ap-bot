@@ -1,0 +1,22 @@
+{
+  "name": "processor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@microsoft/microsoft-graph-client": "^1.0.0",
+    "async": "^2.6.1",
+    "azure": "^2.3.0-preview",
+    "azure-sb": "^0.10.6",
+    "dotenv": "^6.0.0",
+    "jsonwebtoken": "^8.3.0",
+    "mssql": "^4.1.0",
+    "simple-oauth2": "^2.2.0",
+    "tedious": "^2.6.1"
+  }
+}
