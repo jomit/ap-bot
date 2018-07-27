@@ -44,7 +44,7 @@
     helper.startIdleTimeout = function(session){
         idleTimeout = setTimeout(() => {
             session.beginDialog("HumanHandoffDialog");
-        },20000);
+        },30000);
     };
 
     helper.stopIdleTimeout = function(callback){
