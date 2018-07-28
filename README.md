@@ -68,7 +68,7 @@
     - `npm install`
     - `npm start`
 
-- **Start Bot Process Job**
+- **Start Bot Request Processor Job**
     - `cd console`
     - `npm install`
     - `npm start`
@@ -91,7 +91,13 @@
 
     ![Invoice Dialogs](https://raw.githubusercontent.com/jomit/ap-bot/master/images/invoice-dialogs.png)
 
+
 - To Test Servicenow, log in to the dev intance and click on `Incidents` to see the tickets created/updated by the Bot
+
+    ![Servicenow Incicents](https://raw.githubusercontent.com/jomit/ap-bot/master/images/servicenow-1.png)
+    
+
+    ![Servicenow Incident Activity](https://raw.githubusercontent.com/jomit/ap-bot/master/images/servicenow-2.png)
 
 ### Deploy on Azure
 
