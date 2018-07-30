@@ -99,11 +99,27 @@
 
     ![Servicenow Incident Activity](https://raw.githubusercontent.com/jomit/ap-bot/master/images/servicenow-2.png)
 
+
+    - Servicenow tickets are created for each conversation session and the entire history of the conversation is saved under activities.
+    - The Ticket ID is updated based on the human handoff response.
+
+### Human Handoff
+
+- Human handoff is done via ticket assignments. If the user is idle for more than 30 seconds than the Bot will ask user if they need to talk to human and update the ticket in Servicenow and assign to specific group.
+
 ### Deploy on Azure
 
-- *TODO*
+- Update **Application Settings** 
+    - Click on `Application Settings` under Bot Service and add all environment variables from `web\.env` file.
+    - Add a new variable to update nodejs version with name=`WEBSITE_NODE_DEFAULT_VERSION` and value=`8.11.1`
+    
+- Update **Nodejs version**
+    - Under `Build` in Bot Service click on `Open online code editor`.
+    - Updated the `iisnode.yml` file to point the nodeProcessCommandLine to 8.11.1 path `nodeProcessCommandLine: "D:\Program Files (x86)\nodejs\6.9.1\node.exe"`
 
-- Update Nodejs version to 8.11.1
-- Update Application Settings
-- Deploy code
+- Deploy **Code**
+    - Copy all the code from `web` folder into the `wwwroot` folder on Azure. (Do not copy `.env` file and `node_modules` folder)
+    - Under `Build` in Bot Service click on `Open online code editor`.
+    - Click on `Open Console` button and run `npm install` to install all the dependencies.
+    - Restart the App Service
 
